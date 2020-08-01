@@ -1,136 +1,155 @@
 <!DOCTYPE html>
-<html>
-<title>Sterlex</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="./imgweb/sterlex-circle .png">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<body>
-
-  <style>
-
-    body {
-      background-image: url("./imgweb/ds.jpg");
-      background-size: auto;
-    }
-    .avatar {
-      margin-top: auto;
-      margin-bottom: auto;
-      margin: 8%;
-    }
-    .button {
-      border-radius: 24px;
-      background-color: black;
-      border: none;
-      color: blue;
-      text-align: center;
-      font-size: 14px;
-      padding: 7px;
-      width: 180px;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin: 5px;
-    }
-    .button span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-    }
-    .button span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-    .button:hover span {
-      padding-right: 25px;
-    }
-    .button:hover span:after {
-      opacity: 1;
-      right: 0;
-    }
-    .margin {
-      margin-top: auto;
-      margin-bottom: auto;
-      margin: 8%;
-    }
-    img {
-      border-radius: 50%;
-    }
-    .checked {
-      color: orange;
-    }
-    
-    </style>
-
 <html lang="it">
-  <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-      <meta charset="utf-8">
+    <title>Sterlex</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="icon" href="./imgweb/sterlex-circle .png">
+            <link rel="stylesheet" type="text/css" href="styles.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+            html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+            </style>
+          
+<!-- BARRA -->
+<div class="w3-center w3-black w3-animate-top w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+    <h4 class="w3-bar-item"><img src="/imgweb/sterlexit3.png"></h4>
+    <a href="#" class="w3-bar-item w3-button w3-hover-blue"><i class="fa fa-cog" aria-hidden="true"></i> Manutenzione</a>
+    <button onclick="w3_close()" class="w3-bar-item w3-large w3-button w3-text-red w3-hover-red"><i class="fa fa-times" aria-hidden="true"></i> CHIUDI</button>
+  </div>
 
-<script>
+<!-- CONTENUTO BARRA -->
+  <div class=" w3-container w3-black w3-center">
+    <button class="w3-button w3-black w3-xlarge w3-animate-opacity w3-hover-blue" onclick="w3_open()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+  </div>
+    <div class="w3-container">
+    </div>
+
+        <script>
+            function w3_open() {
+              document.getElementById("mySidebar").style.display = "block";
+              document.getElementById("mySidebar").style.width = "100%";
+            }
+            
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+            </script>
+
+<!-- SFONDO -->
+<body>
+    <style>
+        body {
+          background-image: url('/imgweb/ds.jpg');
+        }
+            </style>
+   
+<!-- PAGINA -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+<div class="w3-content w3-margin-top" style="max-width:1920px;"></div>
+
+  <!-- GRID -->
+  <div class="w3-row-padding w3-animate-opacity">
   
-  function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
+<!-- INFO MIZEN -->
+    <div class="w3-third-center">
+    
+      <div class="w3-round-xxlarge w3-black w3-text-grey w3-card-4">
+        <div class="w3-display-container">
 
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
+            <div class="w3-display-bottomleft w3-container w3-text-white">
+                </div>
+            </div>
 
-</script>
+          <div class="w3-container w3-black w3-round-xxlarge">
+
+          <p class="w3-large"><b><i class="fas fa-hashtag fa-fw w3-text-blue"></i>STERLEX BOT</b></p>
+
+            <a href="https://discord.com/oauth2/authorize?client_id=728093218339815896&permissions=20812872878&scope=bot" target="_blank" class="w3-hover-green w3-button w3-tag w3-blue w3-large w3-round-xlarge"><i class="fab fa-discord w3-large" aria-hidden="true"></i><b> AGGIUNGI ORA</b></a></span><p>
+            <a href="https://discord.gg/rrrfabH" target="_blank" class="w3-hover-red w3-button w3-tag w3-blue w3-large w3-round-xlarge"><i class="fab fa-discord w3-large" aria-hidden="true"></i><b> SERVER SUPPORTO</b></a></span></p>
+
+
+          <p class="w3-large"><b><i class="fas fa-hashtag fa-fw w3-text-blue"></i>MIZEN</b></p>
+          <p class="w3-large w3-center w3-hide"><span class="w3-tag w3-round-xlarge"><img src="/imgweb/mizen.gif" height="25" class="w3-circle" "> Mizen#0007</span></p>
+
+          <p><i class="fas fa-code fa-fw w3-large w3-text-red"></i> Developer</p>
+          <p><i class="fas fa-globe fa-fw w3-large w3-text-red"></i> Italy, Macedonia</p>
+          <p><i class="fas fa-envelope-open-text fa-fw w3-large w3-text-red"></i> sterlexcontact@gmail.com</p>
+          
+          <p class="w3-large"><b><i class="fa fa-hashtag fa-fw w3-text-blue"></i>SKILLS</b></p>
+
+          <p><i class="fa fa-check" aria-hidden="true"></i> Adobe Photoshop</p>
+          <div class="w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:75%">
+              <div class="w3-center w3-text-black">75%</div>
+            </div>
+          </div>
+
+          <p><i class="fa fa-check" aria-hidden="true"></i> HTML</p>
+          <div class="w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:65%">65%</div>
+          </div>
+
+          <p><i class="fa fa-check" aria-hidden="true"></i> JavaScript</p>
+          <div class="w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-yellow" style="width:55%">55%</div>
+          </div>
+
+          <p><i class="fa fa-check" aria-hidden="true"></i> CSS</p>
+          <div class="w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-cyan" style="width:45%">45%</div>
+          </div>
+
+          <p class="w3-hide">
+            <i class="fa fa-check" aria-hidden="true"></i> CSS</p>
+          <div class="w3-hide w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-cyan" style="width:45%">45%</div>
+          </div>
+        </div>
+        <br>
+      </div><br>
+
+<!-- INFO MIZEN FINE -->
+</div>
+
+<!-- INFO SOCIALS -->
+<div class="w3-third-center">
+    </div>
+    <div class="w3-round-xxlarge w3-black w3-text-grey w3-card-4">
+      <div class="w3-display-container">
+
+          <div class="w3-display-bottomleft w3-container w3-text-white">
+              </div>
+          </div>
+
+        <div class="w3-container w3-black w3-round-xxlarge">
+
+          <p class="w3-large w3-center"><b><i class="fas fa-hashtag fa-fw w3-text-blue"></i>SOCIALS</b></p><p>
+            <center>
+            <a href="https://www.instagram.com/notmizen/?hl=it" target="_blank"><i class="fab fa-instagram w3-xlarge w3-margin-right" aria-hidden="true"></i></a>
+            <a href="https://www.twitch.tv/notmizen" target="_blank"><i class="fab fa-twitch w3-xlarge w3-margin-right" aria-hidden="true"></i></a>
+            <a href="https://github.com/mizenit" target="_blank" "><i class="fab fa-github w3-xlarge w3-margin-right" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCoJog2xM0P84geh2bULg9bA?view_as=subscriber" target="_blank"><i class="fa fa-youtube-play w3-xlarge" aria-hidden="true"></i></a>
+            <p>
+            </center>
+  <!-- INFO SOCIALS FINE -->
+</div>
+    
+<!-- FINE GRID -->
+  </div>
+  
+<!-- FINE PAGINA -->
+</div>
+
+<div class="w3-animate-opacity w3-center w3-hide">
+<a class="w3-button w3-black w3-text-white w3-round-xlarge w3-hover-blue" href="#" rel="go-top"><i class="fa fa-arrow-up" aria-hidden="true"></i> RITORNA SOPRA</a>
+</div>
+
+<footer class=" w3-text-white w3-animate-opacity w3-container w3-center w3-margin-top" style="text-shadow:1px 1px 0 #000">
+  <p><a target="_blank">©️ 2020 Sterlex Development</a></p>
+    </footer>
 
 </body>
-
-  <div class="avatar">
-    <center>
-      </p>
-    <img src="./imgweb/sterlex-circle .png" class="w3-border" width="130" height="130"></center></p><div>
-  <div>
-    <center>
-      <a class="w3-text-white w3-xxlarge">
-        <h1 style="text-shadow:1px 1px 0 BLUE">
-          <b>Sterlex</b>
-            <p>
-              <h5>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-        </center></div>
-     
-      <center>
-        <a class="btn btn-primary btn-lg w3-animate-left" href="https://discord.gg/rrrfabH" target="_blank" role="button" id="add"><i class="fas fa-link"></i> SERVER SUPPORTO</a>
-        <a class="btn btn-primary btn-lg w3-animate-right" href="https://discord.com/oauth2/authorize?client_id=728093218339815896&permissions=20812872878&scope=bot" target="_blank" role="button" id="add"><i class="fas fa-link"></i> AGGIUNGI IL BOT</a>
-       <p>
-      <center>
-        <p>
-
-    <div>
-      <ul class="w3-ul w3-card-4-" style="width:27%">
-      
-      <li class="w3-bar w3-center">
-        <img src="https://cdn.discordapp.com/avatars/537238532494852097/a_cccd34d69c20d7f60cc55d5f3813dd7f.gif?size=1024" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
-          <div class="w3-bar-item">
-            <span class="w3-large w3-left w3-text-white"><b>Mizen</b>#0007</span><p></p>
-            <button class="w3-left button"><span><img src="./imgweb/developer.png" class="BaseIcon mr-2 fad" content="Developer" width="16" height="15">Sterlex Developer </span></button>
-          </div>
-        </li>
-      <p>
-        </div class="w3-text-white w3-tag w3-display-bottomleft">
-          <span class="w3-text-white">©️ 2020 Sterlex Development</span>
-
-        </body>   
-      </center>
-      
 </html>
