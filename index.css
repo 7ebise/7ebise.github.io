@@ -87,9 +87,9 @@
   border: 5px solid #1C6EA4;
   border-radius: 40px 40px 40px 40px;
   font-family: "Cairo", sans-serif;
-  width: 145px;
+  width: 125px;
   height: 56px;
-  margin-right: 10px;
+  margin-right: 7px;
   transition: .3s;
 }
 .btn1:hover
@@ -101,9 +101,9 @@
   border: 5px solid #1C6EA4;
   border-radius: 40px 40px 40px 40px;
   font-family: "Cairo", sans-serif;
-  width: 145px;
+  width: 125px;
   height: 56px;
-  margin-left: 10px;
+  margin-left: 7px;
   transition: .3s;
 }
 .btn2:hover
