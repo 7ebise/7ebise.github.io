@@ -1,0 +1,211 @@
+::-webkit-scrollbar
+{
+    background: #585858;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(360deg,#161e38,#7289DA);
+}
+.montfont
+{
+  font-family: "Montserrat", sans-serif;
+}
+.vigafont
+{
+  font-family: "Viga", sans-serif;
+}
+.cairofont
+{
+  font-family: "Cairo", sans-serif;
+}
+.robotofont
+{
+  font-family: "Roboto", sans-serif;
+}
+.poppfont
+{
+  font-weight: bold !important;
+  color: #fff;
+  background: transparent !important;
+  font-family: "Poppins", sans-serif !important;
+}
+.latofont
+{
+  font-family: "Lato", sans-serif;
+}
+.nav-link 
+{
+    font-weight: bold !important;
+    color: #fff;
+    background: transparent !important;
+    font-family: "Poppins", sans-serif !important;
+}
+.nav-link:hover 
+{
+    font-weight: bold !important;
+    background: transparent !important;
+    color: #7289DA !important;
+}
+.navbar-toggler
+{
+    color: #fff
+}
+.attivato {
+    color: #7289DA !important;
+}
+.disattivato {
+    color: #555555 !important;
+}
+.nav-link .nav-link-2
+{
+    font-weight: bold !important;
+    color: #555555;
+    background: transparent !important;
+    font-family: "Poppins", sans-serif !important;
+}
+
+@media screen and (min-width:993px) {
+.nav-item {
+    transition: .3s;
+    margin-left: 25px;
+}
+.nav-item:hover {
+    transform: scale(1.2);
+    }
+}
+.header {
+    padding-top: 160px !important;
+    color: #fff !important;
+    text-align: center!important;
+}
+
+@media screen and (max-width: 480px) {
+.header {
+  padding-top: 60px !important; 
+ }
+}
+.titolo
+{
+  margin-bottom: -2px !important;
+  font-size: 70px !important;
+  font-weight: bold !important;
+  color: #fff;
+  background: transparent !important;
+  font-family: "Poppins", sans-serif !important;
+}
+.descHeader {
+    font-size: 17px !important;
+    font-family: 'Lato', sans-serif;
+    color: rgba(255, 255, 255, 0.685) !important;
+}
+
+@media screen and (max-width: 480px) {
+.titolo {
+    font-size: 42px !important;
+    }
+.descHeader
+{
+    font-size: 15px !important;
+}
+}
+.btn {
+    margin-left: 15px !important;
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    width: 160px;
+    height: 42px;
+}
+
+.btn i {
+    margin-right: 5px !important;
+}
+
+.sbtn {
+    color: #fff !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+.sbtn i {
+    margin-right: 5px !important;
+}
+
+.btn-primary {
+    background-color: #7289DA !important
+}
+
+.btn-secondary {
+    background-color: #56ca39 !important
+}
+
+.btn-primary-2 {
+    color: #fff !important;
+    background: #b8810b !important;
+}
+.btn-secondary-2 {
+    color: #fff !important;
+    background: #B23121 !important;
+}
+
+.features {
+    padding-top: 80px !important;
+    color: #fff !important;
+    text-align: center!important;
+}
+
+.ft-titolo
+{
+  margin-bottom: -2px !important;
+  font-size: 50px !important;
+  font-weight: bold !important;
+  color: #fff;
+  background: transparent !important;
+  font-family: "Poppins", sans-serif !important;
+}
+.ft-linea
+{
+  width: 150px;
+  height: 4px;
+  background: #ffffff;
+  margin: 15px auto;
+}
+
+.features img 
+{
+    padding-top: 25px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 480px) {
+.ft-titolo {
+    font-size: 40px !important;
+    }
+}
+
+.discord-widget
+{
+  padding: 80px 0 80px;
+  text-align: center; 
+}
+.discord-server
+{
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  font-weight: bold !important;
+  overflow: hidden;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.discord-linea
+{
+  width: 150px;
+  height: 4px;
+  background: #ffffff;
+  margin: 15px auto;
+}

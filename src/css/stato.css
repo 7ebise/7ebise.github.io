@@ -1,0 +1,82 @@
+::-webkit-scrollbar
+{
+    background: #585858;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(360deg,#161e38,#7289DA);
+}
+.montfont
+{
+  font-family: "Montserrat", sans-serif;
+}
+.vigafont
+{
+  font-family: "Viga", sans-serif;
+}
+.cairofont
+{
+  font-family: "Cairo", sans-serif;
+}
+.robotofont
+{
+  font-family: "Roboto", sans-serif;
+}
+.poppfont
+{
+  font-weight: bold !important;
+  color: #fff;
+  background: transparent !important;
+  font-family: "Poppins", sans-serif !important;
+}
+.latofont
+{
+  font-family: "Lato", sans-serif;
+}
+.nav-link 
+{
+    font-weight: bold !important;
+    color: #fff;
+    background: transparent !important;
+    font-family: "Poppins", sans-serif !important;
+}
+.nav-link:hover 
+{
+    font-weight: bold !important;
+    background: transparent !important;
+    color: #7289DA !important;
+}
+.navbar-toggler
+{
+    color: #fff
+}
+.attivato {
+    color: #7289DA !important;
+}
+.disattivato {
+    color: #555555 !important;
+}
+.nav-link .nav-link-2
+{
+    font-weight: bold !important;
+    color: #555555;
+    background: transparent !important;
+    font-family: "Poppins", sans-serif !important;
+}
+
+@media screen and (min-width:993px) {
+.nav-item {
+    transition: .3s;
+    margin-left: 25px;
+}
+.nav-item:hover {
+    transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    iframe {
+      height: 1450px;
+}}
