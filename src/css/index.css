@@ -63,7 +63,7 @@
 @media screen and (max-width: 600px) {
     .header .logo img {
         width: 170px;
-        margin-top: 50%;
+        margin-top: 25%;
     }
     .header .titolo h1 {
         font-size: 42px;
