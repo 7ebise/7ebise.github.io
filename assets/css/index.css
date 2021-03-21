@@ -1,0 +1,83 @@
+::-webkit-scrollbar
+{
+    background: #2C2F33;
+    width: 1.5px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #3E7BEC;
+}
+
+body {
+    user-select: none !important;
+    background-color: #161620 !important;
+}
+
+.header-logo img {
+    width: 240px;
+    display: block;
+    margin-top: 12%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-title h1 {
+    margin-top: 0%;
+    text-align: center;
+    font-size: 48px;
+}
+
+.header-button {
+    text-align: center;
+    margin-top: 20px;
+    left: 50%;
+    top: 50%;
+}
+
+.header-button a i {
+    margin-right: 5%;
+}
+
+.header-button a {
+    border: 1px #3E7BEC solid;
+    text-align: center;
+    padding: 14px;
+    width: 210px;
+    margin: 4px;
+    color: white;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: .7s;
+}
+
+.creator {
+    padding-top: 14px;
+}
+
+.header-button a:hover {
+    transform: scale(1.07) !important;
+    color: white !important;
+}
+
+@media screen and (max-width: 777px) {
+    .header-logo img {
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .header-logo img {
+        width: 200px;
+        margin-top: 25%;
+    }
+    .header-title h1 {
+        font-size: 35px;
+    }
+    .header-button a {
+        width: 180px;
+        font-size: 13px;
+    }
+    .creator {
+        font-size: 13px;
+    }
+}
