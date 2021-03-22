@@ -5,7 +5,7 @@
 }
 ::-webkit-scrollbar-thumb
 {
-    background: #3E7BEC;
+    background: #7d6cfb;
 }
 
 body {
@@ -39,7 +39,7 @@ body {
 }
 
 .header-button a {
-    border: 1px #3E7BEC solid;
+    border: 1px #7d6cfb solid;
     text-align: center;
     padding: 14px;
     width: 210px;
